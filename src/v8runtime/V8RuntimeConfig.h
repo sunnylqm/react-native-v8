@@ -1,6 +1,8 @@
 #pragma once
 
-namespace facebook {
+#include <string>
+
+namespace rnv8 {
 
 struct V8RuntimeConfig {
   V8RuntimeConfig() {}
@@ -20,4 +22,4 @@ struct V8RuntimeConfig {
   std::string deviceName;
 };
 
-} // namespace facebook
+} // namespace rnv8

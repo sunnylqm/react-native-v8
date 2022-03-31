@@ -10,13 +10,16 @@
 #import <React/RCTLog.h>
 #import "../../v8runtime/V8Runtime.h"
 
-namespace facebook {
-namespace react {
+namespace jsi = facebook::jsi;
+namespace react = facebook::react;
 
-std::unique_ptr<JSExecutor> V8ExecutorFactory::createJSExecutor(
-    std::shared_ptr<ExecutorDelegate> delegate,
-    std::shared_ptr<MessageQueueThread> __unused jsQueue) {
-  auto installBindings = [runtimeInstaller=runtimeInstaller_](jsi::Runtime &runtime) {
+namespace rnv8 {
+
+std::unique_ptr<react::JSExecutor> V8ExecutorFactory::createJSExecutor(
+    std::shared_ptr<react::ExecutorDelegate> delegate,
+    std::shared_ptr<react::MessageQueueThread> __unused jsQueue)
+{
+  auto installBindings = [runtimeInstaller = runtimeInstaller_](jsi::Runtime &runtime) {
     react::Logger iosLoggingBinder = [](const std::string &message, unsigned int logLevel) {
       _RCTLogJavaScriptInternal(
         static_cast<RCTLogLevel>(logLevel),
@@ -35,5 +38,4 @@ std::unique_ptr<JSExecutor> V8ExecutorFactory::createJSExecutor(
       std::move(installBindings));
 }
 
-} // namespace react
-} // namespace facebook
+} // namespace rnv8

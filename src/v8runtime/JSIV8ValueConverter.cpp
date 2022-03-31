@@ -2,7 +2,9 @@
 
 #include "V8PointerValue.h"
 
-namespace facebook {
+namespace jsi = facebook::jsi;
+
+namespace rnv8 {
 
 // static
 jsi::Value JSIV8ValueConverter::ToJSIValue(
@@ -176,4 +178,4 @@ std::string JSIV8ValueConverter::ToSTLString(
   return ToSTLString(utf8);
 }
 
-} // namespace facebook
+} // namespace rnv8

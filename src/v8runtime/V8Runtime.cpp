@@ -8,7 +8,9 @@
 #include "V8PointerValue.h"
 #include "jsi/jsilib.h"
 
-namespace facebook {
+namespace jsi = facebook::jsi;
+
+namespace rnv8 {
 
 namespace {
 
@@ -1129,4 +1131,4 @@ void V8Runtime::OnHostFuncionContainerCallback(
   }
 }
 
-} // namespace facebook
+} // namespace rnv8

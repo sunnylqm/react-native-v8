@@ -4,7 +4,7 @@
 #include "jsi/jsi.h"
 #include "v8.h"
 
-namespace facebook {
+namespace rnv8 {
 
 class V8PointerValue final : public V8Runtime::PointerValue {
  public:
@@ -30,4 +30,4 @@ class V8PointerValue final : public V8Runtime::PointerValue {
   v8::Global<v8::Value> value_;
 };
 
-} // namespace facebook
+} // namespace rnv8
