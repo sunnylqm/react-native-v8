@@ -26,7 +26,7 @@
     "build": "bash -c '. ./scripts/export_npm_env.sh && ./scripts/build.sh'"
   },
   "config": {
-    "RN_VERSION": "main"
+    "RN_VERSION": "0.68-stable"
   },
   "dependencies": {
     "v8-android-jit": "~9.93.0"
@@ -35,6 +35,6 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "clang-format": "^1.4.0"
+    "clang-format": "^1.8.0"
   }
 }

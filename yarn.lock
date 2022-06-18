@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-async@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
-  integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
+async@^3.2.3:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
+  integrity sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -20,12 +20,12 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-clang-format@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/clang-format/-/clang-format-1.4.0.tgz#1ee2f10637eb5bb0bd7d0b82c949af68e848367e"
-  integrity sha512-NrdyUnHJOGvMa60vbWk7GJTvOdhibj3uK5C0FlwdNG4301OUvqEJTFce9I9x8qw2odBbIVrJ+9xbsFS3a4FbDA==
+clang-format@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/clang-format/-/clang-format-1.8.0.tgz#7779df1c5ce1bc8aac1b0b02b4e479191ef21d46"
+  integrity sha512-pK8gzfu55/lHzIpQ1givIbWfn3eXnU7SfxqIwVgnn5jEM6j4ZJYjpFqFs4iSBPNedzRMmfjYjuQhu657WAXHXw==
   dependencies:
-    async "^1.5.2"
+    async "^3.2.3"
     glob "^7.0.0"
     resolve "^1.1.6"
 
@@ -95,10 +95,10 @@ resolve@^1.1.6:
   dependencies:
     path-parse "^1.0.6"
 
-v8-android@~9.88.0:
-  version "9.88.0"
-  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-9.88.0.tgz#ecb8e4426d6e68837d70eb71f209626bb0d3c575"
-  integrity sha512-KUnCspxD/7h2Gl7a8OhVd+8UWGPqmCDXwT3PORa32HXk+BK2KBKS+jnd0Eyccv4sSawfQM62iZGghb+8KOuJbw==
+v8-android-jit@~9.93.0:
+  version "9.93.0"
+  resolved "https://registry.yarnpkg.com/v8-android-jit/-/v8-android-jit-9.93.0.tgz#2e52d3878da97647959991cefc5b90e47449f51a"
+  integrity sha512-qSEnxj/7x2lqvAjRtdox0fx20J5ekcLg/O1/M4vNKUtbWG75+/ACspP3n0KD0RIYLhD8F2iGxERRbwu9FbjKRg==
 
 wrappy@1:
   version "1.0.2"
