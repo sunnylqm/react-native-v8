@@ -1,6 +1,6 @@
 {
-  "name": "react-native-v8",
-  "version": "0.0.0",
+  "name": "@sunnylqm/react-native-v8",
+  "version": "0.68.2",
   "description": "Opt-in V8 runtime for React Native Android",
   "repository": {
     "type": "git",
@@ -11,6 +11,9 @@
     "android",
     "v8"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kudo/react-native-v8/issues"
